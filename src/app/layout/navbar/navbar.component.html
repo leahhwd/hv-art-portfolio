@@ -1,0 +1,23 @@
+<div class="navbar-wrapper">
+
+  <div class="navbar-container">
+    <img src="/images/Instagram_Glyph_Black.png" alt="Logo" class="nav-logo" />
+
+    <div class="hamburger-menu" (click)="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <nav class="navbar" [class.open]="menuOpen">
+    <div class="nav-links" >
+      <a class="nav-link" href="#home" (click)="closeMenu()">Home</a>
+      <a class="nav-link" href="#about" (click)="closeMenu()">About</a>
+      <a class="nav-link" href="#gallery" (click)="closeMenu()">Gallery</a>
+      <a class="nav-link" href="#contact" (click)="closeMenu()">Contact</a>
+    </div>
+  </nav>
+
+</div>
+

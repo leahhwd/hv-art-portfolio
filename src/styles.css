@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('/images/background-mobile.webp');
+}
+
+:root {
+  --nav-height: 72px; /* adjust if your navbar is taller */
+}
+
+/* keep page content below fixed navbar (includes safe-area for notches) */
+body {
+  padding-top: calc(var(--nav-height) + env(safe-area-inset-top, 0px));
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url('/images/background-desktop.webp');
+  }
+}
+
+h1 {
+  font-family: 'Meow Script', cursive;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 100px;
+  box-sizing: border-box;
+}
+

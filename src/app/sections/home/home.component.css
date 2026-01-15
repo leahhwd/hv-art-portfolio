@@ -1,0 +1,106 @@
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-text {
+  text-align: center;
+}
+
+.home-text h1 {
+  font-family: 'Passions Conflict', cursive;
+  font-size: 4.5rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.home-text h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-top: -35px;
+}
+
+.mobile-home-image img {
+  width: 100vw;
+  height: auto;
+}
+
+.desktop-home-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+.mobile-home-image{
+    display: none;
+}
+  .home-text {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    right: 45%;
+  }
+
+  .home-text h1 {
+    font-size: 5.5rem;
+    opacity: 0.6;
+  }
+
+  .desktop-home-image {
+    position: relative;
+    display: block;
+    z-index: 1;
+    left: 0;
+    top: 15%;
+    overflow: hidden;
+  }
+
+  .desktop-home-image img {
+    width: 100vw;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .home-text {
+    right: 50%;
+  }
+  .home-text h1 {
+    font-size: 7rem;
+  }
+
+  .home-text h2 {
+    font-size: 3rem;
+    margin-top: -70px;
+  }
+
+
+ .desktop-home-image {
+    left: 5%;
+ }
+
+ .desktop-home-image img {
+    width: 80vw;
+ }
+}
+
+@media (min-width: 1200px) {
+  .home-text h1 {
+    font-size: 8rem;
+  }
+
+  .home-text h2 {
+    font-size: 3.5rem;
+    margin-top: -80px;
+  }
+
+ .desktop-home-image img {
+    width: 70vw;
+ }
+}
