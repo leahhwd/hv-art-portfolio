@@ -1,0 +1,18 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #F4F1EC;
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+p {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 10px 0;
+}
