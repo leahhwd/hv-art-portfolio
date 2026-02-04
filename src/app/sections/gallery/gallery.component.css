@@ -1,0 +1,44 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.wrapper img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+}
+
+.div2 {
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-row-start: 2;
+}
+
+
+.div5 {
+    grid-row-start: 3;
+}
+
+
+.div7 {
+    grid-row-start: 4;
+}
+
+
+@media (min-width: 1000px) {
+  .wrapper {
+    max-width: 800px;
+  }
+}

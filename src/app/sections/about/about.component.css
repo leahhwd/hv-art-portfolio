@@ -26,6 +26,28 @@ line-height: 1.6em;
   width: 100%;
   height: auto;
 margin-top: -50px;
+}
 
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+  }
 
+  .about-content {
+    padding: 0;
+    flex: 1;
+  }
+
+  .about-content p {
+    padding: 0 20%;
+    font-size: 1.2em;
+  }
+
+  .about-image {
+    flex: 1;
+    min-width: auto;
+  }
 }
