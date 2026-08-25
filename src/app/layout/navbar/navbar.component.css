@@ -31,6 +31,18 @@
 
 }
 
+.left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-side p {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
 nav {
   display: none;
   width: 100%;
