@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .home-text {
@@ -17,13 +17,27 @@
   font-size: 4.5rem;
   opacity: 0.8;
   font-weight: 400;
+  margin: 0;
 }
 
 .home-text h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.7rem;
-  font-weight: 300;
-  margin-top: -35px;
+  font-family: 'Antonio', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin: 1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+
+.home-quote {
+  transform: translate(6.25vw, 65.625vw);
 }
 
 .mobile-home-image img {
@@ -37,19 +51,33 @@
 
 @media (min-width: 768px) {
 
+  .home-container {
+    position: relative;
+  }
+
 .mobile-home-image{
     display: none;
 }
   .home-text {
-    position: absolute;
     z-index: 2;
-    top: 30%;
-    right: 45%;
   }
 
   .home-text h1 {
     font-size: 5.5rem;
     opacity: 0.6;
+  }
+
+  .home-quote {
+    transform: none;
+  }
+
+  .text-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 45%;
   }
 
   .desktop-home-image {
@@ -68,7 +96,10 @@
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
+  .text-content-container {
+    top: 40%
+  }
   .home-text {
     right: 50%;
   }
