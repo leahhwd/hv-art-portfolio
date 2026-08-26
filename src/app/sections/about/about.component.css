@@ -1,7 +1,7 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 
@@ -10,10 +10,16 @@
 }
 
 .about-content p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Antonio', sans-serif;
   text-align: center;
-  font-size: 1em;
-line-height: 1.6em;
+  font-size: 1.2em;
+line-height: 2em;
+font-weight: 200;
+}
+
+.about-tags {
+  padding: 20px;
+  text-align: center;
 }
 
 .about-image {
@@ -28,26 +34,57 @@ line-height: 1.6em;
 margin-top: -50px;
 }
 
+.about-medium {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-family: 'Antonio', sans-serif;
+  font-size: 1.2em;
+  opacity: 0.6;
+  letter-spacing: .1em;
+}
+
+.about-quote{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1.5em;
+  
+}
+
+.graphite {
+  color: #4C6B8C;
+}
+
+.ink {
+  color: #95b4d3;
+}
+
+.watercolor {
+  color: #4d7c75;
+}
+
+
+
+
 @media (min-width: 768px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
-  }
-
-  .about-content {
-    padding: 0;
-    flex: 1;
+   padding: 15%;
   }
 
   .about-content p {
-    padding: 0 20%;
-    font-size: 1.2em;
+    line-height: normal;
+    margin-right: 20px;
+    
+  }
+  .about-tags {
+    padding: 10px;
+    text-align: center;
+
   }
 
-  .about-image {
-    flex: 1;
-    min-width: auto;
-  }
 }
