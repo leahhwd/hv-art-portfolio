@@ -1,17 +1,50 @@
+
+.contact-section {
+  position: relative;
+  background-image: url('/images/final-cbg.png');
+  overflow: hidden;
+ padding-bottom: 2em;
+ background-repeat: no-repeat;
+}
+
+
+
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  border: 2px solid red;
-  
+  padding: 15% 10% 0 10%;
+  z-index: 10;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+}
+h2 {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 300;
+  letter-spacing: .15em;
+  margin-top: 3em;
+  color: #F4F1EC;
 }
 
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  letter-spacing: .15em;
-  margin-bottom: 2em;
+h2:before {
+  content: '- ';
+}
+
+h2:after {
+  content: ' -'
+}
+
+p {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1.5em;
+  opacity: 0.6;
+  text-align: center;
+  color:#F4F1EC;
 }
 
 .contact-form {
@@ -28,9 +61,11 @@ h2 {
 }
 
 label {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 400;
   margin-bottom: 10px;
+  letter-spacing: .2em;
+  color: #F4F1EC;
 
 }
 
@@ -38,28 +73,44 @@ input, textarea {
   width: 100%;
   display: block;
   border: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Antonio', sans-serif;
   font-weight: 300;
   background: transparent;
   outline: none;
-  line-height: 1.2rem;
+  line-height: 2rem;
+  color: #F4F1EC;
 
 }
 
 
 textarea {
   resize: none;
-  height: 1.5em;
+  height: 2rem;
 }
 
 button {
   background: none;
   border: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Antonio', sans-serif;
   font-size: large;
-  font-weight: 300;
-  letter-spacing: .1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2em;
   cursor: pointer;
-  color:black;
+  color: #F4F1EC;
   padding: 25px 20px;
 }
+
+@media( min-width: 1024px) {
+  .contact-section {
+    background-image: url('/images/final-cbg-larger.png');
+  }
+}
+
+@media(min-width: 1440px) {
+  .contact-section {
+    background-image: url('/images/final-cbg-largest.png');
+  }
+}
+
+
