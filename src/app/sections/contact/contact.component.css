@@ -5,6 +5,7 @@
   overflow: hidden;
  padding-bottom: 2em;
  background-repeat: no-repeat;
+ filter: drop-shadow(5px -5px 10px rgba(0, 0, 0, 0.3));
 }
 
 
@@ -55,7 +56,7 @@ p {
 }
 
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-bottom: 2px solid #ccc;
 
 }
@@ -86,11 +87,11 @@ input, textarea {
 textarea {
   resize: none;
   height: 2rem;
+  
 }
 
 button {
   background: none;
-  border: none;
   font-family: 'Antonio', sans-serif;
   font-size: large;
   font-weight: 400;
@@ -98,12 +99,29 @@ button {
   letter-spacing: .2em;
   cursor: pointer;
   color: #F4F1EC;
-  padding: 25px 20px;
+  border: 2px solid #F4F1EC;
+  padding: 20px 20px;
+  width: auto;
+  margin-bottom: 2em;
+}
+
+button:hover {
+  border: 2px solid #F4F1EC;
+  color: #4d7c75;
+  background-color: #F4F1EC;
+  transition: all 0.4s;
 }
 
 @media( min-width: 1024px) {
   .contact-section {
     background-image: url('/images/final-cbg-larger.png');
+  }
+
+
+
+  input, textarea {
+    font-size: 1.3em;
+    letter-spacing: .02em;
   }
 }
 
