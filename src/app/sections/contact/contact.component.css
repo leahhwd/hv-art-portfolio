@@ -8,9 +8,6 @@
  filter: drop-shadow(5px -5px 10px rgba(0, 0, 0, 0.3));
 }
 
-
-
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -24,6 +21,7 @@
   align-items: center;
   padding-bottom: 1em;
 }
+
 h2 {
   font-family: 'Antonio', sans-serif;
   font-weight: 300;
@@ -58,7 +56,6 @@ p {
 .form-group {
   margin-bottom: 40px;
   border-bottom: 2px solid #ccc;
-
 }
 
 label {
@@ -67,7 +64,6 @@ label {
   margin-bottom: 10px;
   letter-spacing: .2em;
   color: #F4F1EC;
-
 }
 
 input, textarea {
@@ -80,14 +76,12 @@ input, textarea {
   outline: none;
   line-height: 2rem;
   color: #F4F1EC;
-
 }
 
 
 textarea {
   resize: none;
   height: 2rem;
-  
 }
 
 button {
@@ -117,11 +111,15 @@ button:hover {
     background-image: url('/images/final-cbg-larger.png');
   }
 
-
+label {
+  font-size: 1.2em;
+}
 
   input, textarea {
     font-size: 1.3em;
     letter-spacing: .02em;
+    padding-top: .5em;
+    
   }
 }
 
