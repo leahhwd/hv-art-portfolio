@@ -144,6 +144,7 @@ a {
     left: 0;
     top: 15%;
     overflow: hidden;
+    filter: drop-shadow(10px 14px 10px rgba(0, 0, 0, 0.22));
   }
 
   .desktop-home-image img {
