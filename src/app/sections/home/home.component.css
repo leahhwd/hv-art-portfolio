@@ -298,3 +298,9 @@ a {
  
 }
 
+@media (min-width: 1440px) {
+  .home-text h1 {
+    font-size: 10rem;
+  }
+}
+
